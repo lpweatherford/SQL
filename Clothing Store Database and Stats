@@ -1,0 +1,20 @@
+--Create a table for a clothing store. 
+
+CREATE TABLE Store (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, price INTEGER, aisle INTEGER);
+
+--Add clothing to the store with quantities, price and aisle. 
+
+INSERT INTO Store VALUES (1, "Shirts", 5, 15, 1);
+INSERT INTO Store VALUES (2, "Pants", 5, 25, 2);
+INSERT INTO Store VALUES (3, "Pajamas", 5, 20, 3);
+
+SELECT * FROM Store;
+
+--Order the clothing by price. 
+
+SELECT * FROM Store 
+ORDER BY price;
+
+--Quantify how many pieces of clothing are in the store. 
+
+SELECT SUM(quantity) FROM Store;
